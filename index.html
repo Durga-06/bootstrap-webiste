@@ -18,6 +18,38 @@
 
 <body>
 
+    <!-- navbar -->
+    <nav class="navbar py-3 navbar-light navbar-expand-sm">
+        <!-- logo -->
+        <a href="#" class="navbar-brand text-uppercase font-italic">My Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarLinks">
+            <div class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#header" class="nav-link">home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">about</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">projects</a>
+                </li>
+            </div>
+        </div>
+
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
     <header id="header" class="bg-dark">
         <div class="container">
             <div class="row height align-items-center">
@@ -506,44 +538,72 @@
     <!-- contact section -->
     <section id="contact" class="py-5 bg-warning">
         <div class="container">
-            <!--contact title -->
+            <!--section-title -->
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="display-4 text-dark text-uppercase mb-0">
+                    <h1 class="display-4 text-uppercase text-dark mb-0">
                         <strong>contact</strong>
                     </h1>
-                    <div class="title-underline bg-danger"></div>
-                    <p class="mt-2 text-capitalize text-muted">
-                        Lorem ipsum dolor sit amet.
-                    </p>
+                    <div class="title-underline bg-primary"></div>
+                    <p class="mt-2 text-capitalize text-muted">Lorem ipsum dolor sit amet.</p>
                 </div>
-            </div>
-            <!-- end of contact title -->
 
+            </div>
+            <!-- end of section-title -->
             <div class="row">
                 <div class="col-md-6 my-3">
                     <div class="card card-body bg-secondary">
-
                         <!-- title -->
                         <div class="card-title text-center text-white">
-                            <h2 class="text-capitalize">new to bootstrap</h2>
+                            <h2 class="text-capitalize">new to bootstrap?</h2>
                             <p>new user sign in</p>
                         </div>
                         <!-- end of title -->
                         <form>
+                            <!-- simple form -->
                             <div class="form-group mt-3">
-
+                                <input type="text" class="form-control form-control-lg" id="name">
                             </div>
+                            <!-- email -->
+                            <div class="form-group mt-3">
+                                <input type="email" class="form-control" id="email" placeholder="email">
+                            </div>
+                            <!-- phone -->
+                            <div class="form-group mt-3">
+                                <input type="tel" class="form-control" placeholder="phone" id="phone">
+                            </div>
+                            <!-- input group -->
+                            <div class="input-group my-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">username</span>
+                                </div>
+                                <input type="text" class="form-control" id="group-username">
+                            </div>
+                            <!-- font-awesome -->
+                            <div class="input-group my-3">
+                                <!-- prepend -->
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <!-- end prepend -->
+                                <input type="text" class="form-control" id="group-username-1" placeholder="username">
+                                <!-- append -->
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-primary">submit</button>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-outline-dark btn-block text-uppercase">Sign up
+                                here</button>
                         </form>
                     </div>
                 </div>
-
                 <!-- google maps -->
-
                 <div class="col-md-6 my-3">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.552322560861!2d78.53133341435513!3d17.528871203324076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb84cdc26729fb%3A0x5c21f7378bbde325!2s4-4-147%2C%20Kowkoor%2C%20Secunderabad%2C%20Telangana%20500010!5e0!3m2!1sen!2sin!4v1567449711916!5m2!1sen!2sin"
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.552322560861!2d78.53133341435513!3d17.528871203324076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb84cdc26729fb%3A0x5c21f7378bbde325!2s4-4-147%2C%20Kowkoor%2C%20Secunderabad%2C%20Telangana%20500010!5e0!3m2!1sen!2sin!4v1567495578150!5m2!1sen!2sin"
                             width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                 </div>
@@ -764,6 +824,77 @@
         </div>
     </section>
     <!-- end of pricing section -->
+
+
+    <!-- footer section -->
+    <footer id="footer" class="py-5 bg-dark">
+        <div class="container">
+            <!--footer title -->
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="display-4 text-light text-uppercase mb-0">
+                        <strong>footer</strong>
+                    </h1>
+                    <div class="title-underline bg-warning"></div>
+                    <p class="mt-2 text-capitalize text-light">
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <!-- end of footer title -->
+
+            <div class="row">
+                <div class="col text-center">
+                    <a href="#" class="btn">
+                        <i class="fab fa-facebook fa-3x text-primary m-2"></i>
+                    </a>
+
+                    <a href="#" class="btn">
+                        <i class="fab fa-twitter fa-3x text-primary m-2"></i>
+                    </a>
+
+
+                    <a href="#" class="btn">
+                        <i class="fab fa-instagram fa-3x text-primary m-2"></i>
+                    </a>
+
+
+                    <a href="#" class="btn">
+                        <i class="fab fa-google-plus fa-3x text-primary m-2"></i>
+                    </a>
+
+                    <button type="button" class="btn btn-danger d-block mx-auto my-3" data-toggle="modal"
+                        data-target="#modal">Logout</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- modal -->
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header">
+                    <h3 class="modal-title">Sorry to see you leave</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body">
+                    <p class="text-center">No guts no story</p>
+                </div>
+
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
 
 
 
