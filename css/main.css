@@ -32,6 +32,16 @@ body {
     background-attachment: fixed; */
 }
 
+#progress {
+    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.1)), url(../images/lamp.jpg) center/cover no-repeat fixed;
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
+
+
 
 
 
